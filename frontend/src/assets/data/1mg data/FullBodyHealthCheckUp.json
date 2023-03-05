@@ -1,0 +1,40 @@
+{
+  "selection1": [
+    {
+      "title": "Women Wellness Advanced Package",
+      "desc": "Includes 44 tests",
+      "imgUrl": "https://onemg.gumlet.io/diagnostics/b1f8f81e-5677-11ec-9fd9-0a65f29f7340.png?format=auto",
+      "rating": "4.9",
+      "price": "₹1499",
+      "strikeOfPrice": "₹2998",
+      "discount": "50% Off"
+    },
+    {
+      "title": "Comprehensive Platinum Full Body Checkup",
+      "desc": "Includes 91 tests",
+      "imgUrl": "https://onemg.gumlet.io/diagnostics/b1f8f81e-5677-11ec-9fd9-0a65f29f7340.png?format=auto",
+      "rating": "4.9",
+      "price": "₹3499",
+      "strikeOfPrice": "₹6998",
+      "discount": "50% Off"
+    },
+    {
+      "title": "Monsoon Health Screening",
+      "desc": "Includes 54 tests",
+      "imgUrl": "https://onemg.gumlet.io/diagnostics/b1f8f81e-5677-11ec-9fd9-0a65f29f7340.png?format=auto",
+      "rating": "4.9",
+      "price": "₹1299",
+      "strikeOfPrice": "₹2598",
+      "discount": "50% Off"
+    },
+    {
+      "title": "Good Health Silver Package",
+      "desc": "Includes 58 tests",
+      "imgUrl": "https://onemg.gumlet.io/diagnostics/b1f8f81e-5677-11ec-9fd9-0a65f29f7340.png?format=auto",
+      "rating": "4.9",
+      "price": "₹649",
+      "strikeOfPrice": "₹1298",
+      "discount": "50% Off"
+    }
+  ]
+}
