@@ -4,11 +4,12 @@ const  connection  = require("./config/db")
 const { users } = require('./routes/users.routes')
 const {products}=require("./routes/products.routes")
 const cookieParser = require("cookie-parser");
+const cors=require("cors")
 const app=express()
 app.use(express.json())
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
-
+app.use(cors())
 
 
 app.get("/",(req,res)=>{
