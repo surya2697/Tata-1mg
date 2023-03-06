@@ -12,10 +12,9 @@ const loginUser = async (req, res) => {
       if (verify) {
         const details = {
           id: user._id,
-          firstname: user.firstname,
-          lastname: user.lastname,
-          gender: user.gender,
+          name: user.name,
           email: user.email,
+          mobile:user.mobile,
           role: user.role,
         };
         const token = jwt.sign(details, process.env.key, {
