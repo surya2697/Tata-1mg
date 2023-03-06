@@ -2,6 +2,7 @@ require('dotenv').config()
 const express=require("express")
 const  connection  = require("./config/db")
 const { users } = require('./routes/users.routes')
+const UserRouter=require('./routes/User.router')
 const {products}=require("./routes/products.routes")
 const cookieParser = require("cookie-parser");
 const cors=require("cors")

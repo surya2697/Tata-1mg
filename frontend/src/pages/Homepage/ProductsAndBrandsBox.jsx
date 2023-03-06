@@ -1,4 +1,4 @@
-import { Box, Button, Image, Link, Text } from "@chakra-ui/react";
+import { Box, Button, Image, Link, LinkBox, Text } from "@chakra-ui/react";
 import React from "react";
 import {
   FeaturedBrands,
@@ -8,7 +8,12 @@ import {
 } from "./Constants";
 import BrandsCard from "./Reusesable/BrandsCard";
 import ProductsCard from "./Reusesable/ProductsCard";
+import { useNavigate } from "react-router-dom";
 const ProductsAndBrandsBox = () => {
+  const navigate=useNavigate()
+   const handlePage=()=>{
+        navigate("/products")
+   }
   return (
     <Box bg="#f6f6f6">
       {/* Top image */}
@@ -39,16 +44,18 @@ const ProductsAndBrandsBox = () => {
           <Text fontWeight={"400"} lineHeight={"26px"} fontSize={"22px"}>
             Featured Brands
           </Text>
-          <Link href="http://localhost:8080/products" target="_blank">
+         
             <Button
               bgColor="#ff6f61"
               _hover={{ bg: "#ff6f61" }}
               width="fit-content"
               color="white"
+              onClick={handlePage}
             >
+            
               SEE ALL
             </Button>
-          </Link>
+            
         </Box>
         <BrandsCard something={FeaturedBrands} />
       </Box>
@@ -65,16 +72,17 @@ const ProductsAndBrandsBox = () => {
           <Text fontWeight={"400"} lineHeight={"26px"} fontSize={"22px"}>
             Top Sellers From Ensure
           </Text>
-          <Link href="http://localhost:8080/products" target="_blank">
+       
             <Button
               bgColor="#ff6f61"
               _hover={{ bg: "#ff6f61" }}
               width="fit-content"
               color="white"
             >
+           
               SEE ALL
             </Button>
-          </Link>
+          
         </Box>
         <ProductsCard something={topSellingProducts} />
       </Box>
@@ -86,16 +94,17 @@ const ProductsAndBrandsBox = () => {
           <Text fontWeight={"400"} lineHeight={"26px"} fontSize={"22px"}>
             Featured Brands
           </Text>
-          <Link href="http://localhost:8080/products" target="_blank">
+       
             <Button
               bgColor="#ff6f61"
               _hover={{ bg: "#ff6f61" }}
               width="fit-content"
               color="white"
             >
+               
               SEE ALL
             </Button>
-          </Link>
+       
         </Box>
         <BrandsCard something={health} />
       </Box>
@@ -112,16 +121,17 @@ const ProductsAndBrandsBox = () => {
           <Text fontWeight={"400"} lineHeight={"26px"} fontSize={"22px"}>
             Top Sellers From Ensure
           </Text>
-          <Link href="http://localhost:8080/products" target="_blank">
+        
             <Button
               bgColor="#ff6f61"
               _hover={{ bg: "#ff6f61" }}
               width="fit-content"
               color="white"
             >
+              
               SEE ALL
             </Button>
-          </Link>
+        
         </Box>
         <ProductsCard something={topSellingProducts} />
       </Box>
@@ -138,16 +148,17 @@ const ProductsAndBrandsBox = () => {
           <Text fontWeight={"400"} lineHeight={"26px"} fontSize={"22px"}>
             Top Sellers From Ensure
           </Text>
-          <Link href="http://localhost:8080/products" target="_blank">
+      
             <Button
               bgColor="#ff6f61"
               _hover={{ bg: "#ff6f61" }}
               width="fit-content"
               color="white"
             >
+               
               SEE ALL
             </Button>
-          </Link>
+       
         </Box>
         <ProductsCard something={topSellingProducts} />
       </Box>
@@ -159,16 +170,17 @@ const ProductsAndBrandsBox = () => {
           <Text fontWeight={"400"} lineHeight={"26px"} fontSize={"22px"}>
             Featured Brands
           </Text>
-          <Link href="http://localhost:8080/products" target="_blank">
+       
             <Button
               bgColor="#ff6f61"
               _hover={{ bg: "#ff6f61" }}
               width="fit-content"
               color="white"
             >
+               
               SEE ALL
             </Button>
-          </Link>
+        
         </Box>
         <BrandsCard something={health} />
       </Box>
@@ -185,16 +197,17 @@ const ProductsAndBrandsBox = () => {
           <Text fontWeight={"400"} lineHeight={"26px"} fontSize={"22px"}>
             Top Sellers From Ensure
           </Text>
-          <Link href="http://localhost:8080/products" target="_blank">
+        
             <Button
               bgColor="#ff6f61"
               _hover={{ bg: "#ff6f61" }}
               width="fit-content"
               color="white"
             >
-              SEE ALL
+               
+               SEE ALL
             </Button>
-          </Link>
+      
         </Box>
         <ProductsCard something={topSellingProducts} />
       </Box>

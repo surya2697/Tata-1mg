@@ -8,13 +8,18 @@ const agron2=require("argon2")
 const {UserModel}=require("../../models/users.models")
 
 const registerUser=async(req,res)=>{
-    const {name,email,password}=req.body
+    const {name,email,password,mobile}=req.body
     try {
         const hashPassword=await agron2.hash(password)
-        const user= new UserModel({name,email,password:hashPassword})
-        const token=jwt.sign({id:user._id,name,email},process.env.key)
+        const user= new UserModel({name,email,mobile,password:hashPassword})
+        
+        const token=jwt.sign({id:user._id,name,email,mobile},process.env.key)
         await user.save()
+        if(token){
         res.send({msg:"success",description:"Successfully Registered",token,user})
+        }else{
+            res.send({msg:"User Already exists"})
+        }
     } catch (error) {
         res.send({ message: "failed", description: error.message });
     }
