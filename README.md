@@ -17,7 +17,7 @@ Checkout our application here ✌ - [TATA 1mg.com Clone](https://tata-1mg-clone-
 
 ## 🚀 Deployment
 
-Checkout our application here ✌ - [1mg Clone](https://tata-1mg-clone-project-sepia.vercel.app/)
+Checkout our application here ✌ 
 
 ## 🔥 Features
 
