@@ -1,30 +1,31 @@
-require('dotenv').config()
-const express=require("express")
-const  connection  = require("./config/db")
-const { users } = require('./routes/users.routes')
-const UserRouter=require('./routes/User.router')
-const {products}=require("./routes/products.routes")
-const cookieParser = require("cookie-parser");
-const cors=require("cors")
-const app=express()
-app.use(express.json())
-app.use(cookieParser());
-app.use(express.urlencoded({ extended: false }));
-app.use(cors())
+const express = require("express");
+const dotenv = require("dotenv");
+const cors = require("cors");
 
+const ProductRouter = require("./router/product.route");
+const UserRouter = require("./router/User.router");
+const connection =require("./config/db")
+dotenv.config();
+const app = express();
+
+
+app.use(cors());
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.get("/",(req,res)=>{
-    res.send("Hello this is from backend")
+  res.send("Hello this is from backend")
 })
 
-app.use("/users",users)
-app.use("/products",products)
 
+//Product Route
+app.use("/products", ProductRouter);
 
-
-
+//User Route
+app.use("/user", UserRouter);
 
 app.listen(process.env.port,()=>{
-    connection()
-    console.log(`Server started on the ${process.env.port}`)
+  connection()
+  console.log(`Server started on the ${process.env.port}`)
 })

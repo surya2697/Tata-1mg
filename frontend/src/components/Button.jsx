@@ -14,7 +14,7 @@ const Wrapper = styled.button`
 `;
 
 const Button = ({ styles, onClick }) => {
-  // console.log(onClick);
+ 
   return (
     <Wrapper onClick={onClick} {...styles}>
       {styles.text}
