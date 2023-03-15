@@ -7,7 +7,7 @@ Our main objective is to complete all main functionality of TATA 1mg.com, such a
 
 TATA 1mg.com is an e-commerce web application that widely provides e-pharmacy, diagnostics, e-consultation, and healthcare solutions related service all across india and in this project we have tried to make a replica of this web application.
 
-Checkout our application here ✌ - [TATA 1mg.com Clone](https://tata-1mg-clone-project-sepia.vercel.app/)
+Checkout our application here ✌
 
 ## 🔧 Technologies & Tools
 
