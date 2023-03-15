@@ -11,7 +11,7 @@ Checkout our application here ✌
 
 ## 🔧 Technologies & Tools
 
-[![Tools](https://skillicons.dev/icons?i=html,css,javascript,redux,react,mongodb,express,nodejs,firebase,tailwind,github,vercel)
+[![Tools](https://skillicons.dev/icons?i=html,css,javascript,redux,react,mongodb,express,nodejs,firebase,tailwind,github,vercel)]
 
 <hr />
 
